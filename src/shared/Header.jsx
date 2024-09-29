@@ -51,7 +51,9 @@ const Header = () => {
       {/* desktop menu */}
       <div
         className={`hidden w-full md:flex items-center py-2 gap-3 bg-white fixed left-0 right-0 z-50 transition-all duration-500 ${
-          scrolled ? "header-shadow z-40 top-0 py-2 shadow-md" : ""
+          scrolled
+            ? "header-shadow z-40 top-0 py-2 shadow-md transition-all duration-500"
+            : ""
         }`}
       >
         <div className="max-w-screen-xl w-full mx-auto flex items-center justify-between">
