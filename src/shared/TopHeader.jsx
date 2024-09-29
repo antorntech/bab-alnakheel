@@ -8,7 +8,7 @@ const TopHeader = () => {
           <div className="flex items-center gap-5">
             <p>
               <i class="fa-solid fa-envelope me-2"></i>
-              <span>info@skyclouds.ae Dubai</span>
+              <span>info@babalnakheel.ae</span>
             </p>
             <p>
               <i class="fa-solid fa-location-dot me-2"></i>
