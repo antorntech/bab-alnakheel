@@ -168,3 +168,17 @@ body {
   height: 80px;
   margin: 0 40px;
 }
+
+.review-card {
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 90%,
+    83% 90%,
+    83% 99%,
+    68% 90%,
+    0 90%
+  );
+
+  background-color: #eeeeee;
+}

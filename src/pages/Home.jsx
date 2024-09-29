@@ -5,6 +5,7 @@ import HomeServices from "../components/home/HomeServices";
 import HomeClients from "../components/home/HomeClients";
 import HomeContactForm from "../components/home/HomeContactForm";
 import HomeGallery from "../components/home/HomeGallery";
+import Reviews from "../components/home/Reviews";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <HomeServices />
       <HomeGallery />
       <HomeClients />
+      <Reviews />
       <HomeContactForm />
     </div>
   );
