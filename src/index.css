@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.custom-shadow {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.next-arrow {
+  top: 35%;
+  right: 8px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: #0000005b;
+  transition: all ease-in-out 0.4s;
+}
+
+.prev-arrow {
+  top: 35%;
+  left: 10px;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  display: flex;
+  cursor: pointer;
+  position: absolute;
+  border-radius: 50%;
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  background-color: #0000005b;
+  transition: all ease-in-out 0.4s;
+}
+
+.next-arrow:hover,
+.prev-arrow:hover {
+  background-color: #000000b7;
+}
+
+.next-arrow2 {
+  top: 35%;
+  right: 8px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: #0000005b;
+  transition: all ease-in-out 0.4s;
+}
+
+.prev-arrow2 {
+  top: 35%;
+  left: 10px;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  display: flex;
+  cursor: pointer;
+  position: absolute;
+  border-radius: 50%;
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  background-color: #0000005b;
+  transition: all ease-in-out 0.4s;
+}
+
+.next-arrow2:hover,
+.prev-arrow2:hover {
+  background-color: #000000b7;
+}
+
+@media screen and (max-width: 768px) {
+  .next-arrow {
+    top: 30%;
+  }
+
+  .prev-arrow {
+    top: 30%;
+    right: 55px;
+  }
+
+  .next-arrow2 {
+    top: 40%;
+    right: 12px;
+  }
+
+  .prev-arrow2 {
+    top: 40%;
+    right: 55px;
+  }
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.client-logos {
+  overflow: hidden;
+  background: transparent;
+  white-space: nowrap;
+  position: relative;
+}
+
+.client-logos:before,
+.client-logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.client-logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #ffffff);
+}
+
+.client-logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff);
+}
+
+.client-logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  border: 1px solid #000;
+  margin: 0 10px;
+  padding: 20px 10px;
+  animation: 3s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 80px;
+  margin: 0 40px;
+}
