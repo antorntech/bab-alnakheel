@@ -58,7 +58,7 @@ const Header = () => {
           scrolled ? "header-shadow z-40 top-0 py-2 shadow-md" : ""
         }`}
       >
-        <div className="w-3/4 mx-auto flex items-center justify-between">
+        <div className="max-w-screen-xl w-full mx-auto flex items-center justify-between">
           <div>
             <Link to="/">
               <img src="/images/logo-dark.png" alt="logo-dark.png" />
